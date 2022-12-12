@@ -33,7 +33,6 @@ fieldset:last-of-type {
 label {
     display: block;
     margin: 0.5rem 0;
-    border: 3px solid black;
 }
 
 input, 
@@ -41,10 +40,25 @@ textarea,
 select {
     width: 100%;
     margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+input,
+textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
 }
 
 .inline {
     width: unset;
-    margin: 0 0;
-    margin-right: 0.5em;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+/*Codigo seleciona o input que possui o atributo type igual á submit */
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
 }
